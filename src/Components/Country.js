@@ -3,7 +3,7 @@ import { useParams, Link} from "react-router-dom";
 import NavComponent from "./NavComponents";
 import Loading from "./Loading";
 
-function Country() {
+function Country({theme,toggleTheme}) {
   const [countries, setCountries] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -33,7 +33,7 @@ function Country() {
   console.log(countries);
   return (
     <div className="countries-info">
-      <NavComponent />
+      <NavComponent theme={theme} toggleTheme={toggleTheme}/>
       <div className="country-component">
         <div className="back">
           <Link to="/">&larr; &nbsp;  Back</Link>

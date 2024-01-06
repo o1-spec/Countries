@@ -56,9 +56,6 @@ function CountryDesc() {
     >
       <form className="filter" onSubmit={handleSearch}>
         <label htmlFor="SearchInput">
-          <button className="submit" type="submit">
-            <img src="/design/Search.svg" alt="Search icon" />
-          </button>
           <input
             name="SearchInput"
             type="text"
@@ -66,6 +63,9 @@ function CountryDesc() {
             placeholder="Search for a Country"
             onChange={(e) => setCountryName(e.target.value)}
           />
+          <button className="submit" type="submit">
+            Search
+          </button>
         </label>
         <select name="region" onChange={fetchRegion}>
           <option value="">Filter by Region</option>

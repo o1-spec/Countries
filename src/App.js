@@ -24,7 +24,7 @@ function App() {
               path="/"
               element={<Nav theme={theme} toggleTheme={toggleTheme} />}
             />
-            <Route path="/countries/:id" element={<Country />} />
+            <Route path="/countries/:id" element={<Country theme={theme} toggleTheme={toggleTheme}/>} />
             <Route path="*" element={<ErrorSearch theme={theme} toggleTheme={toggleTheme}/>} />
           </Routes>
         </BrowserRouter>
