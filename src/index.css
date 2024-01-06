@@ -264,6 +264,10 @@ option{
   padding: 1rem;
 }
 
+.submit{
+  cursor: pointer;
+}
+
 .submit img{
   width: 2rem;
   padding-right: 0.5rem;

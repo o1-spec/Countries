@@ -30,7 +30,7 @@ function Country({theme,toggleTheme}) {
 
     return () => {};
   }, []);
-  console.log(countries);
+  //console.log(countries);
   return (
     <div className="countries-info">
       <NavComponent theme={theme} toggleTheme={toggleTheme}/>

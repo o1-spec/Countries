@@ -2,12 +2,6 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 
 function NavComponent({ toggleTheme, theme }) {
-  /*
-  const [theme, setTheme] = useState("light");
-
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === "light" ? "dark" : "light"));
-  };*/
 
   return (
     <>
@@ -21,11 +15,6 @@ function NavComponent({ toggleTheme, theme }) {
           )}
           <span>{theme === "light" ? "Dark Mode" : "Light Mode"}</span>
         </div>
-        {/*
-        <div className="light-button">
-          <img src="/design/Sun.svg" alt="Sun Icon" />
-          <span>Light Mode</span>
-  </div>*/}
       </div>
 
       <Outlet context={[theme]} />
